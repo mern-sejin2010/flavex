@@ -1,0 +1,13 @@
+:root {
+    --primary: #ef5c02;
+    --border: #e7e7e7;
+}
+body {
+    font-family: var(--space-grotesk);
+    margin: 0px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}

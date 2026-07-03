@@ -2,6 +2,7 @@ import './globals.css';
 import './page.module.css';
 import type { Metadata } from 'next';
 import { Space_Grotesk } from 'next/font/google';
+import { AppThemeProvider } from '@/providers';
 // font
 const spaceGrotesk = Space_Grotesk({
   variable: '--space-grotesk',
@@ -23,9 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className={spaceGrotesk.variable}>
-      <body>
-        { children }
-      </body>
+      <AppThemeProvider>
+        <body>
+          { children }
+        </body>
+      </AppThemeProvider>
     </html>
   );
 };
