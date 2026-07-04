@@ -26,7 +26,7 @@ const styles = {
         py: 1,
         background: '#f6f5f7',
         '& p': {
-            fontSize: 14,
+            fontSize: { xs: 12, md: 14 },
             fontWeight: 500,
         },
         '& svg': {

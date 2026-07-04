@@ -1,8 +1,11 @@
 :root {
+    --theme: #FAF7F3;
     --primary: #ef5c02;
     --border: #e7e7e7;
+    --z-index: 56646;
 }
 body {
+    background: var(--theme);
     font-family: var(--space-grotesk);
     margin: 0px;
 }

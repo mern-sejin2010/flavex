@@ -31,7 +31,7 @@ export default function MobileNavbar () {
                 closeAfterTransition={false}
                 sx={styles.drawer}
             >
-                <WebBrand/>
+                <WebBrand sx={{ p: 0.5 }}/>
                 <Flexbox 
                     direction='column' 
                     gap={0.5} 
@@ -83,6 +83,7 @@ export default function MobileNavbar () {
 };
 const styles = {
     drawer: {
+        zIndex: 'var(--z-index)',
         '& .MuiDrawer-paper': {
             px: 2,
             py: 0.5,

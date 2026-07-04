@@ -1,7 +1,9 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
-import WebBrand from "../header/web-brand";
-import ContactUs from "./contact";
-
+import WebBrand from '../header/web-brand';
+import ContactUs from './contact';
+import QuickLinks from './quick-links';
+import Information from './information';
+import FollowUs from './follow';
+import { Box, Container, Grid, Typography } from '@mui/material';
 export default function Footer () {
     return (
         <Box 
@@ -10,20 +12,21 @@ export default function Footer () {
         >
             <Container>
                 <Grid container spacing={2}>
-                    <Grid size={{ xs: 12, md: 6, lg: 3 }}>
+                    <Grid size={{ xs: 12, md: 3 }}>
                         <WebBrand size={100}/>
-                        <Typography sx={{ fontWeight: 500, my: 2 }}>
+                        <Typography sx={styles.details}>
                             Delicious food made with love and the finest ingredients.
                             Visit us and experience the difference.
                         </Typography>
+                        <FollowUs/>
                     </Grid>
-                    <Grid size={{ xs: 12, md: 6, lg: 3 }}>
-                        a
+                    <Grid size={{ xs: 12, md: 3 }}>
+                        <QuickLinks/>
                     </Grid>
-                    <Grid size={{ xs: 12, md: 6, lg: 3 }}>
-                        a
+                    <Grid size={{ xs: 12, md: 3 }}>
+                        <Information/>
                     </Grid>
-                    <Grid size={{ xs: 12, md: 6, lg: 3 }}>
+                    <Grid size={{ xs: 12, md: 3 }}>
                         <ContactUs/>
                     </Grid>
                 </Grid>
@@ -39,12 +42,19 @@ export default function Footer () {
 };
 const styles = {
     footer: {
-        py: 5,
+        pt: 5,
+        background: '#fff',
         borderTop: '1px solid var(--border)', 
         textAlign: { xs: 'center', md: 'start' }, 
     },
+    details: { 
+        my: 2, 
+        maxWidth: 500, 
+        mx: { xs: 'auto', md: 0 },
+    },
     copyright: { 
         py: 3, 
+        mt: 3,
         borderTop: '1px solid var(--border)', 
         textAlign: 'center', 
         '& p': { 

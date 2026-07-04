@@ -11,6 +11,8 @@ export default function ContactUs () {
             <Typography sx={{ 
                 fontSize: 17, 
                 fontWeight: 500, 
+                color: 'var(--primary)',
+                mb: 3,
             }}>
                 Contact Us
             </Typography>
@@ -21,6 +23,7 @@ export default function ContactUs () {
                 >
                     <Icon 
                         size={20} 
+                        color='var(--primary)'
                         style={{ 
                             marginRight: 5, 
                             marginBottom: -4,
@@ -35,6 +38,6 @@ export default function ContactUs () {
 const contact = [
     { icon: GrLocation, info: 'Dhaka, Bangladesh' },
     { icon: MdOutlineHeadsetMic, info: '+01234567890' },
-    { icon: MdOutlineMailOutline, info: 'example@flavex.com' },
+    { icon: MdOutlineMailOutline, info: 'restaurant@flavex.com' },
     { icon: LuAlarmClock, info: 'Mon - Sun: 10:00 AM - 11:00 PM' },
 ];

@@ -17,7 +17,7 @@ export default function Header () {
                     align='center' 
                     justify='space-between'
                 >
-                    <WebBrand/>
+                    <WebBrand sx={{ py: 1 }}/>
                     <DesktopNavbar/>
                     <MobileNavbar/>
                     <AdditionalRoutes/>
@@ -31,5 +31,7 @@ const styles = {
         background: '#fff',
         position: 'sticky',
         top: 0,
+        borderBottom: '1px solid var(--border)',
+        zIndex: 'var(--z-index)',
     },
 };

@@ -4,11 +4,13 @@ import Box from '@mui/material/Box';
 import { Logo } from '@/assets/images';
 export default function WebBrand ({
     size = 60,
+    sx,
 } : { 
     size?: number;
+    sx?: object;
  }) {
     return (
-        <Box>
+        <Box sx={sx}>
             <Link href='/'>
                 <Image 
                     src={Logo} 
